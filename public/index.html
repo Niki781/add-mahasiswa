@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Daftar Mahasiswa</title>
+  <script src="app.js" defer></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800 p-8">
+  <div class="max-w-xl mx-auto">
+    <h1 class="text-2xl font-bold mb-4">Daftar Mahasiswa</h1>
+
+    <!-- Form Tambah/Update -->
+    <form id="formMahasiswa" class="space-y-4 mb-6">
+      <input type="hidden" id="editMode" value="">
+      <input type="text" id="nim" placeholder="NIM" class="w-full p-2 border rounded" required />
+      <input type="text" id="nama" placeholder="Nama" class="w-full p-2 border rounded" required />
+      <input type="text" id="jurusan" placeholder="Jurusan" class="w-full p-2 border rounded" required />
+      <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700" type="submit">Simpan</button>
+    </form> 
+
+    <!-- Daftar Mahasiswa -->
+    <ul id="listMahasiswa" class="space-y-2"></ul>
+  </div>
+</body>
+</html>
